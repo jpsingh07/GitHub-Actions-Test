@@ -1,7 +1,8 @@
 name: Test Workflow
-on: workflow_dispatch:
+on: 
+  workflow_dispatch:
 jobs:
   check:
-  runs-on: ubuntu-latest
-  steps:
-    run: echo "Hello World...." 
+    runs-on: ubuntu-latest
+    steps:
+      run: echo "Hello World...." 
