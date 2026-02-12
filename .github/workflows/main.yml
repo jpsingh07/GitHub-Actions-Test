@@ -1,0 +1,14 @@
+name: Main CI
+on:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on:  ubuntu-latest
+    steps:
+      - name: Checkout code
+      - uses: actions/checkout@v6
+      - name: Using Python Setup
+      - uses: actions/setup-python@v6
+        with:
+          python-version: 3.13
+      - run: python ./Python/test.py
