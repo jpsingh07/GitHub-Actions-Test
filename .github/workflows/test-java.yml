@@ -9,4 +9,5 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '25'
-      - run: java ./Java/Test.java
+      - run: javac ./Java/Test.java
+      - run: java ./Java/Test
